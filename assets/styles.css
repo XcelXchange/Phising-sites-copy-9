@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Jost';
+    src: url('./fonts/Jost-Italic-VariableFont_wght.ttf'),format('ttf');
+}
+@media (min-width:480px) {
+    body{
+        background-color: #f6f6f6;
+    }
+    .navigations ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+    .navigations ul li a{
+        color: black;
+        text-decoration: none;
+        transition: all 0.1s;
+        font-size: 14px;
+    }
+    .navigations ul li a:hover{
+        color: rgb(85, 7, 7);
+        font-weight: 600;
+        font-size:16px;
+        transform: scale(1.1);
+        border-bottom: 3px solid rgb(85, 7, 7);
+    }
+    .navigations img{
+        display: none;
+    }
+    #block{
+       border-bottom :3px solid rgb(85,7,7);
+        font-weight: 600;
+    }
+    #details{
+       border-bottom :3px solid rgb(85,7,7);
+        font-weight: 600;
+    }
+    #person{
+       border-bottom :3px solid rgb(85,7,7);
+        font-weight: 600;
+    }
+    #alltime{
+       border-bottom :3px solid rgb(85,7,7);
+        font-weight: 600;
+    }
+}
+#blockx{
+    background-color: rgba(56, 132, 255, 0.669);
+    font-weight: bolder;
+    border-style: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: .2s;
+}
+#blockx:active{
+    background-color: rgba(0, 52, 135, 0.669);
+}
+#del{
+    background-color: rgba(255, 0, 0, 0.417);
+    font-weight: bolder;
+    border-style: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: .2s;
+}
+#del:active{
+    background-color: rgba(78, 0, 0, 0.624);
+}
+#all-left{
+    margin-left: 10px;
+    background-color: rgba(137, 43, 226, 0.377);
+    padding: 5px;
+}
+#details-real{
+    padding: 10px;
+    background-color: rgb(220, 220, 220);
+    margin: 10px;
+    border-radius: 10px;
+}
+#blocked-list{
+    padding: 10px;
+    background-color: rgb(220, 220, 220);
+    margin: 10px;
+    border-radius: 10px;
+}
+#mydiv{
+    padding: 10px;
+}
+@media screen and (max-width:480px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        height: 120vh;
+        width: 100%;
+        background-color: #f6f6f6;
+    }
+    .navigations{
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        top: 92%;
+        padding-top: 10px;
+        position: fixed;
+        border-radius: 5px;
+        background-color: white;
+    }
+    #details-real{
+        padding-bottom: 70px;
+    }
+
+    .navigations ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+    .navigations ul li{
+        margin-left: 3%;
+    }
+    .navigations ul li a{
+        font-size: 14px;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+    }
+    .navigations ul div{
+        align-content: center;
+        text-align: center;
+        width: 25%;
+        border: 1px solid rgba(0, 0, 0, 0.489);
+    }
+    .navigations img{
+        width: 30px;
+        height: 30px;
+    }
+    .nav-label {
+        font-family: 'Jost',sans-serif;
+        font-weight: 500;
+    }
+    #block{
+        color: red;
+        font-weight: 600;
+    }
+    #details{
+        color: red;
+        font-weight: 600;
+    }
+    #person{
+        color: red;
+        font-weight: 600;
+    }
+    #alltime{
+        color: red;
+        font-weight: 600;
+    }
+}

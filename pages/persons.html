@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - block persons</title>
+    <link rel="stylesheet" href="../assets/styles.css" type="text/css">
+</head>
+<body>
+    
+    <div class="navigations">
+        <ul>
+           
+            <div>
+            <a href="../index.html">
+            <img src="../assets/icons8-eye-60.png" alt="img here">
+            <li><a href="../index.html" class="nav-label" >Details</a></li>
+            </a>
+        </div>
+        <div>
+            <a href="../pages/block.html">
+            <img src="../assets/icons8-error-26.png" alt="img here">
+            <li><a href="./block.html" class="nav-label">Block Visits</a></li>
+        </a>
+        </div>
+        <div>
+            <a href="./persons.html">
+            <img src="../assets/icons8-customer-30.png" alt="img here">
+            <li><a href="./persons.html" class="nav-label" id="person">Block persons</a></li>
+        </a>
+        </div>
+        <div>
+            <a href="./alltime.html">
+            <img src="../assets/icons8-increase-profits-24.png" alt="img here">
+            <li><a href="./alltime.html" class="nav-label">All-time visits</a></li>
+        </a>
+        </div>
+        </ul>
+    </div>
+    <div>
+        <h1> Block persons Page</h1>
+    </div>
+    <div id="block-list">
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+  <script src="https://raw.githubusercontent.com/firebase/firebase-bower/master/firebase-app-check.js.map"></script>
+  <script src="/js/config.js"></script>
+  <script src="/js/block.js"></script>
+</body>
+</html>
