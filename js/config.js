@@ -10,16 +10,17 @@ const firebaseconfig1 = {
   }
   const firebaseApp1 = firebase.initializeApp(firebaseconfig1, "app1");
   const Primarydatabase = firebaseApp1.database();
-  const firebaseConfig2 = {
-    apiKey: "AIzaSyAIQMhJBufZ5fhzQ2JUQsC8O-FiEU5vOGQ",
-    authDomain: "sara-lance.firebaseapp.com",
-    databaseURL: "https://sara-lance-default-rtdb.firebaseio.com",
-    projectId: "sara-lance",
-    storageBucket: "sara-lance.appspot.com",
-    messagingSenderId: "949456759005",
-    appId: "1:949456759005:web:08d613dd1f8239815a9334",
-    measurementId: "G-1XC50CDJED"
-  }
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyA7WYfhZ73qVJK-qFuzAe_unVCHixzO6Mw",
+  authDomain: "camon17.firebaseapp.com",
+  databaseURL: "https://camon17-default-rtdb.firebaseio.com",
+  projectId: "camon17",
+  storageBucket: "camon17.appspot.com",
+  messagingSenderId: "794985208078",
+  appId: "1:794985208078:web:373772bdc13f0fc3e89f5f",
+  measurementId: "G-HJQJ46HLKX"
+};
   const firebaseApp2 = firebase.initializeApp(firebaseConfig2, "app2");
   const Secondarydatabase = firebaseApp2.database();
   
